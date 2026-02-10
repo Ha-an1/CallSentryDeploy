@@ -4,6 +4,8 @@ from convo import chatbot, detect_fraud
 
 app = Flask(__name__)
 
+print(">>> Flask app starting <<<", flush=True)
+
 CORS(app, resources={r"/chat": {"origins": "*"}})
 
 @app.route("/health", methods=["GET"])
@@ -53,4 +55,5 @@ def chat():
 
 
 if __name__ == "__main__":
+    print(">>> Running directly <<<", flush=True)
     app.run(host="0.0.0.0", port=5000)

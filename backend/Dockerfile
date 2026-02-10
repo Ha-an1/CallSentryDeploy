@@ -15,4 +15,5 @@ COPY . .
 
 ENV PYTHONUNBUFFERED=1
 
-CMD ["gunicorn", "-w", "1", "-k", "gthread", "-t", "120", "-b", "0.0.0.0:5000", "wsgi:app"]
+CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:10000", "--timeout", "120"]
+
