@@ -1,0 +1,5 @@
+{
+  "name": "CallSentry - AI Call Screening",
+  "description": "Intelligent call anomaly detection system that screens incoming calls, interacts with callers, and detects fraudulent intent.",
+  "requestFramePermissions": []
+}
