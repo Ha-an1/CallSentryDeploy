@@ -1,4 +1,5 @@
-const CHAT_ENDPOINT = "http://localhost:5000/chat";
+
+const CHAT_ENDPOINT = import.meta.env.VITE_API_URL;
 
 export interface ChatApiResponse {
   response: string;
