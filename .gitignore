@@ -36,3 +36,5 @@ __pycache__/
 *.pyd
 .venv/
 venv/
+
+backend/credentials.json
